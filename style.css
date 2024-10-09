@@ -7,32 +7,44 @@
   font-style: normal;
 }
 
+main {
+  background-image: url(imgs/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* scrollbar */
 html ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  html ::-webkit-scrollbar-thumb {
-    background: #5e5b5b;
-    border-radius: 10px;
-  }
-  
-  html ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+  background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #5e5b5b;
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .card {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  padding: ;
+  padding: 80;
 }
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.card-title {
+  font-family: "roca", sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }
 
 /* From Uiverse.io by cssbuttons-io */
@@ -108,7 +120,6 @@ button.learn-more .button-text {
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
-  text-transform: uppercase;
 }
 
 button:hover .circle {
@@ -122,4 +133,66 @@ button:hover .circle .icon.arrow {
 
 button:hover .button-text {
   color: #fff;
+}
+
+/* From Uiverse.io by CYBWEBALI */ 
+.btn {
+  display: grid;
+  place-items: center;
+  background: #e3edf7;
+  padding: 1.4em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	      -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	      -0.5px -0.5px 0px rgba(255,255,255,1),
+	      0.5px 0.5px 0px rgba(0,0,0,0.15),
+	      0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  transform: translateY(0.5em);
+}
+
+.btn svg {
+  transition: transform 0.5s;
+}
+
+.btn:hover svg {
+  transform: scale(0.9);
+  fill: #333333;
+}
+
+#footer {
+  background-color: #246c;
+  background-image: linear-gradient(to bottom, transparent, #0009);
+  border-top: 1px solid #fff3;
+  box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+  overflow: hidden;
+  padding: 8px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9001;
+}
+#footer a {
+  color: #85c6f6;
+  padding: 1em 0;
+  text-decoration: none;
+}
+#footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: 300;
+}
+#footer ul li {
+  padding: 0 .5em;
 }
