@@ -89,7 +89,7 @@ nav.custom-navbar {
   font-style: italic;
 }
 
-/* From Uiverse.io by cssbuttons-io */
+/* from Uiverse.io by cssbuttons-io */
 button {
   position: relative;
   display: inline-block;
@@ -262,6 +262,10 @@ footer .form-control {
 
 .regular-btn:hover {
   background-color: rgb(159, 193, 222);
+}
+
+#exampleInputEmail1 {
+  margin-bottom: 10px;
 }
 
 /* longer footer for smaller screens */
